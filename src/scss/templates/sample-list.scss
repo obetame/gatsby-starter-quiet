@@ -1,0 +1,77 @@
+.sample-lists {
+  & .content {
+    list-style-type: none;
+    padding: 0;
+  }
+  & .sample-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem 2rem 1fr;
+    grid-template-areas: 
+    "top"
+    "title"
+    "desc";
+    align-items: center;
+    padding-bottom: 2rem;
+    &-top {
+      grid-area: top;
+      display: grid;
+      grid-template-columns: 6rem 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "date tags";
+      grid-gap: 10px;
+      align-items: center;
+      & .sample-date {
+        grid-area: date;
+        font-size: .9rem;
+        color: var(--gray);
+      }
+      & .sample-tags {
+        grid-area: tags;
+        font-size: .9rem;
+        & a {
+          margin-right: 7px;
+        }
+      }
+    }
+    &-title {
+      grid-area: title;
+      display: block;
+      height: 3rem;
+      line-height: 3rem;
+      grid-area: title;
+      margin: 0;
+      & h5 {
+        position: relative;
+        display: block;
+        color: #121111;
+        border-bottom: 1px solid transparent;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+    &-desc {
+      grid-area: desc;
+    }
+  }
+  & .lists-tip {
+    text-align: center;
+    color: var(--gray);
+  }
+  & .pagination {
+    height: 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "prev next";
+    & .prev {
+      grid-area: prev;
+      justify-self: left;
+    }
+    & .next {
+      grid-area: next;
+      justify-self: right;
+    }
+  }
+}

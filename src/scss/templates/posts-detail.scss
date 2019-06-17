@@ -1,0 +1,52 @@
+@import '../modules/index';
+
+.posts-detail {
+  margin-bottom: 2rem;
+  &-content {
+    padding-top: 2rem;
+    & > p {
+      margin: 1rem 0 1rem;
+      font-weight: 400;
+    }
+    & em {
+      font-weight: 300;
+      color: var(--md-em);
+    }
+    & h2 {
+      border-bottom: 1px solid var(--gray);
+      margin: 0 0 1rem;
+      padding-bottom: 1rem;
+      font-weight: 400;
+    }
+    & blockquote {
+      padding: 0 0 4px 15px;
+      margin: 0 0 0 15px;
+      font-style: italic;
+      color: var(--gray);
+      border-left: 3px solid var(--md-quote-border);
+      & p {
+        margin: 0;
+      }
+    }
+    & code {
+      tab-size: 2;
+      font-family: $base-font-family;
+    }
+    & a {
+      text-decoration: underline;
+      padding: 0 5px;
+    }
+    & figcaption {
+      text-align: center;
+    }
+    & sup {
+      & a {
+        color: var(--success);
+        text-decoration: none;
+      }
+    }
+  }
+  & twitter-widget {
+    margin: 10px auto;
+  }
+}

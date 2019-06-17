@@ -1,0 +1,87 @@
+@import 'modules/index';
+
+#app {
+  min-height: 100vh;
+  width: 100%;
+	display: grid;
+	grid-template-columns: 1fr var(--main-precent) 1fr;
+	grid-template-rows: 10rem 1fr 2rem;
+	grid-template-areas: 
+	". header ."
+	". main ."
+  ". footer .";
+  @include mediaMax(1000px) {
+    grid-template-columns: var(--main-precent);
+    grid-template-rows: 12rem 1fr 2rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  }
+  & header {
+    grid-area: header;
+    padding: 4rem 2rem 2rem;
+    border-bottom: 1px solid #ebeaea;
+    @include mediaMax(1000px) {
+      text-align: center;
+      & ul {
+        float: none;
+      }
+      & li {
+        margin: 0 1rem;
+      }
+    }
+  }
+  & #container {
+    grid-area: main;
+    padding: 1rem 2rem 0;
+    @include mediaMax(1000px) {
+      padding: 1rem 10px 0;
+    }
+  }
+  & footer {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    grid-area: footer;
+    padding: 0 2rem;
+    font-size: 14px;
+    & .info {
+      color: var(--gray);
+    }
+    @include mediaMax(1000px) {
+      padding: 0;
+    }
+    @include mediaMax(500px) {
+      padding: 0 1rem;
+    }
+    @include mediaMax(375px) {
+      padding: 0 10px;
+    }
+    @include mediaMax(320px) {
+      padding: 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--bg);
+  font-family: $base-font-family;
+  color: var(--color);
+  line-height: $base-line-height;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color);
+  text-decoration: none;
+}
+
+::selection {
+  color: var(--bg);
+  background-color: var(--color);
+}

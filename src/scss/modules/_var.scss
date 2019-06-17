@@ -1,0 +1,43 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+$sans-serif: "Fira Code", Helvetica, Arial, sans-serif;
+$serif: "Cormorant Garamond", Courier, serif;
+$base-font-family: $sans-serif;
+$base-font-weight: 400;
+$base-font-weight-bold: 700;
+
+// Colors
+// =============================================================================
+
+$light-color: #464343;
+$light-bg: white;
+$light-list-title: #121111;
+$light-list-desc: #464343;
+
+$dark-color: white;
+$dark-bg: #2d3436;
+$dark-list-title: #ecf0f1;
+$dark-list-desc: #bdc3c7;
+
+$success: #1fbf92;
+$danger: #e74b3c;
+$primary: #3449ed;
+$warning: #f1c90b;
+$light-gray: #ada8a8;
+
+// markdown
+$light-code: $danger;
+$light-code-bg: #faf9f9;
+$light-code-border: #ebeaea;
+$light-quote-border: #464343;
+$light-em: #333;
+$light-highlight: #34495e;
+$light-tag-bg: #868e96;
+$light-tag-bg-count: #495057;
+
+// Font sizes
+
+$base-font-size: 14px;
+$base-line-height: 1.8;

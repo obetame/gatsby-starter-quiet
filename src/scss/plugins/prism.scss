@@ -1,0 +1,55 @@
+/* https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/?=gatsby-remark-prismjs */
+@import '../../node_modules/prismjs/themes/prism-tomorrow.css';
+@import '../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css';
+
+pre[class*="language-"] {
+  &.line-numbers {
+    .gatsby-highlight-code-line {
+      margin-right: -0;
+      margin-left: -1em;
+    }
+  }
+  .gatsby-highlight-code-line {
+    background-color: var(--md-code-highlight);
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+}
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * If you only want to use line numbering
+ */
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  border-radius: 5px;
+}
+
+:not(pre) > code[class*="language-"] {
+  color: var(--md-code);
+  background: var(--md-code-bg);
+  border: 1px solid var(--md-code-border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin: 0 4px;
+}

@@ -1,0 +1,28 @@
+@mixin media($minwidth, $maxwidth) {
+	@media screen and (min-width: $minwidth) and (max-width: $maxwidth) {
+		@content;
+	}
+}
+
+@mixin mediaMin($minwidth) {
+	@media screen and (min-width: $minwidth) {
+		@content;
+	}
+}
+@mixin mediaMax($maxwidth) {
+	@media screen and (max-width: $maxwidth) {
+		@content;
+	}
+}
+
+@mixin ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@mixin mapData($val) {
+  @each $name,$value in $val {
+    #{$name}: $value;
+  }
+}

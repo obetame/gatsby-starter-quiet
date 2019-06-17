@@ -1,0 +1,36 @@
+name: Quiet
+
+social:
+  tags:
+    url: /tags
+    icon: fas fa-tags
+  about:
+    url: /about
+    icon: fas fa-user-alt
+  github:
+    url: https://github.com/zhouyuexie
+    icon: fab fa-github
+  email:
+    url: mailto:zhouyuexie@gmail.com
+    icon: fas fa-envelope
+  rss:
+    url: /feed.xml
+    icon: fas fa-rss
+
+# page
+page:
+  size: 5
+
+# crate page config
+createPageConfig:
+  activeLayout: posts # or 'sample'
+  posts: # blog posts layout, this is default layout
+    homePath: /posts/page/1 # map to '/', if need add index.tsx file, you can set the value to '/'
+    list: posts-list.tsx
+    listPath: /posts/page/:page
+    detail: posts-detail.tsx
+    detailPath: /posts/:date/:title
+    tag: posts-tag.tsx
+    tagPath: /tags/:tag
+  sample:
+    list: sample-list.tsx

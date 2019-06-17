@@ -1,0 +1,20 @@
+@import '../modules/_var';
+@import '../modules/_mixin';
+@import 'default';
+
+@mixin light {
+  :root {
+    @include mapData($lightVal)
+  }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  @include mapData($lightVal)
+  // @include light;
+}
+
+/* support js change theme */
+html[theme=light] {
+  @include light;
+}

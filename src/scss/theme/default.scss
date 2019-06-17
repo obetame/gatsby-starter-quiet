@@ -1,0 +1,48 @@
+@import '../modules/_var';
+@import '../modules/_mixin';
+
+$lightVal: (
+  --theme: light,
+  --color: $light-color,
+  --list-title: $light-list-title,
+  --list-desc: $light-list-desc,
+  --bg: $light-bg,
+  --gray: $light-gray,
+  --success: $success,
+  --danger: $danger,
+  --primary: $primary,
+  --warning: $warning,
+
+  --md-code: $light-code,
+  --md-code-bg: $light-code-bg,
+  --md-code-border: $light-code-border,
+  --md-quote-border: $light-quote-border,
+  --md-em: $light-em,
+  --md-code-highlight: $light-highlight,
+  
+  --tag-bg: $light-tag-bg,
+  --tag-bg-count: $light-tag-bg-count
+);
+
+$darkVal: (
+  --theme: dark,
+  --color: $dark-color,
+  --list-title: $dark-list-title,
+  --list-desc: $dark-list-desc,
+  --bg: $dark-bg,
+  --gray: $light-gray,
+  --success: $success,
+  --danger: $danger,
+  --primary: $primary,
+  --warning: $warning,
+
+  --md-code: $light-code,
+  --md-code-bg: $light-code-bg,
+  --md-code-border: $light-code-border,
+  --md-quote-border: $light-quote-border,
+  --md-em: $light-em,
+  --md-code-highlight: $light-highlight,
+  
+  --tag-bg: $light-tag-bg,
+  --tag-bg-count: $light-tag-bg-count
+);

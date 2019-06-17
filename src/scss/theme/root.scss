@@ -1,0 +1,32 @@
+@import '../modules/_mixin';
+@import 'default';
+
+$mainPrecent: (
+  1920px: 75vw,
+  1440px: 85vw,
+  1000px: 100vw
+);
+@each $name,$value in $mainPrecent {
+  @include mediaMax($name) {
+    :root {
+      --main-precent: #{$value};
+    }
+  }
+}
+
+$fontSize: (
+  1920px: 18px,
+  1440px: 16px,
+  1000px: 14px
+);
+@each $name,$value in $fontSize {
+  @include mediaMax($name) {
+    html {
+      font-size: #{$value};
+    }
+  }
+}
+
+:root {
+  @include mapData($lightVal)
+}

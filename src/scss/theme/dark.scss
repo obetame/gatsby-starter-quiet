@@ -1,0 +1,19 @@
+@import '../modules/index';
+@import '../modules/_mixin';
+@import 'default';
+
+@mixin dark {
+  :root {
+    @include mapData($darkVal)
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  @include dark;
+}
+
+/* support js change theme */
+html[theme=dark] {
+  @include dark;
+}

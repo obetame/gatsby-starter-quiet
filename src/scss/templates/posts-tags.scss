@@ -1,0 +1,44 @@
+.posts-tags {
+  & .tags-filter {
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    text-align: center;
+    & input {
+      height: 2rem;
+      line-height: 2rem;
+      padding: 0 1rem;
+      outline: none;
+      border: 1px solid var(--gray);
+      border-radius: 3px;
+      width: 50%;
+    }
+  }
+  & .tags-index {
+    & ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      & li {
+        display: inline-block;
+      }
+    }
+    & a {
+      display: inline-block;
+      margin: 4px;
+      margin-left: 0px;
+      color: #fff;
+      background-color: var(--tag-bg);
+      text-decoration: none;
+      border-radius: 3px;
+      & span {
+        float: left;
+        padding: .5px 5px;
+        &.count {
+          background-color: var(--tag-bg-count);
+          border-radius: 0 3px 3px 0;
+        }
+      }
+    }
+  }
+}

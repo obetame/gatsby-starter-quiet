@@ -1,0 +1,54 @@
+// =============================================================================
+// Fonts
+// =============================================================================
+
+@charset "UTF-8";
+
+// Fira Code
+// =============================================================================
+
+
+@font-face {
+	font-family: 'Fira Code';
+	src: asset_url('/fonts/firacode/FiraCode-Light.eot');
+	src: asset_url('/fonts/firacode/FiraCode-Light.eot') format('embedded-opentype'),
+			 asset_url('/fonts/firacode/FiraCode-Light.woff2') format('woff2'),
+			 asset_url('/fonts/firacode/FiraCode-Light.woff') format('woff'),
+			 asset_url('/fonts/firacode/FiraCode-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fira Code';
+	src: asset_url('/fonts/firacode/FiraCode-Regular.eot');
+	src: asset_url('/fonts/firacode/FiraCode-Regular.eot') format('embedded-opentype'),
+			 asset_url('/fonts/firacode/FiraCode-Regular.woff2') format('woff2'),
+			 asset_url('/fonts/firacode/FiraCode-Regular.woff') format('woff'),
+			 asset_url('/fonts/firacode/FiraCode-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fira Code';
+	src: asset_url('/fonts/firacode/FiraCode-Medium.eot');
+	src: asset_url('/fonts/firacode/FiraCode-Medium.eot') format('embedded-opentype'),
+			 asset_url('/fonts/firacode/FiraCode-Medium.woff2') format('woff2'),
+			 asset_url('/fonts/firacode/FiraCode-Medium.woff') format('woff'),
+			 asset_url('/fonts/firacode/FiraCode-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fira Code';
+	src: asset_url('/fonts/firacode/FiraCode-Bold.eot');
+	src: asset_url('/fonts/firacode/FiraCode-Bold.eot') format('embedded-opentype'),
+			 asset_url('/fonts/firacode/FiraCode-Bold.woff2') format('woff2'),
+			 asset_url('/fonts/firacode/FiraCode-Bold.woff') format('woff'),
+			 asset_url('/fonts/firacode/FiraCode-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
