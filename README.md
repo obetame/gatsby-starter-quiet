@@ -13,14 +13,22 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 特性
 
+<video muted width="100%" autoplay loop>
+  <source src="https://github.com/zhouyuexie/gatsby-starter-quiet/blob/master/static/download/switch-theme.mp4" type="video/mp4">
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
 - 开箱即用
-- 支持系统主题切换(详细查看[CSS3 媒体查询-Dark 模式](https://www.quietboy.net/posts/css3%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2-dark%E6%A8%A1%E5%BC%8F))
+- 支持系统主题切换(详细查看[CSS3 媒体查询-Dark 模式](https://www.quietboy.net/posts/2019-05-30/CSS3%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2-Dark%E6%A8%A1%E5%BC%8F))
 - TypeScript 支持
 - RSS 支持
 - SCSS 支持
 - Google 分析同级
 - MarkDown 图片懒加载
 - 自定义主题一键切换
+- 使用[FiraCode 英文字体](https://github.com/tonsky/FiraCode)
+- 使用 FontaweSome 图标
+- git commit 消息检查 commitlint[](https://github.com/conventional-changelog/commitlint/#what-is-commitlint)
 
 提供开箱即用的博客模板`posts`和`sample`(默认为`posts`样式),也可以开发自定义模板并修改`src/data/config.yml`中配置一键切换.
 
