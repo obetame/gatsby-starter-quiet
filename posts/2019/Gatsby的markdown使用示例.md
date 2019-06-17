@@ -44,6 +44,13 @@ tags: [markdown, gatsby]
 
 ![alt text](../images/about.jpg)
 
+## 视频播放
+
+<video muted width="100%" autoplay loop>
+  <source src="/download/switch-theme.mp4" type="video/mp4">
+  不好意思,此浏览器不支持视频播放
+</video>
+
 ## 自定义组件
 
 顾名思义也就是可以在 markdown 文件中使用 react 组件,这类支持需要自己定义,比如这篇文章[^4]中介绍的一个计数组件.

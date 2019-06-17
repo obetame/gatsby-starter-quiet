@@ -24,7 +24,6 @@
 		"react-paginate": "^6.3.0",
 		"rehype-react": "^3.1.0",
 		"styled-components": "^4.2.0",
-		"surge": "^0.21.0",
 		"tslint": "^5.17.0",
 		"tslint-react": "^4.0.0"
 	},
@@ -68,9 +67,8 @@
 		"build": "gatsby build",
 		"dev": "gatsby develop",
 		"format": "prettier --write src/**/*.{tsx,jsx,js}",
-		"start": "npm run dev",
 		"serve": "gatsby serve",
-		"surge": "surge ./public",
+		"deploy": "./deploy.sh",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
 	},
 	"husky": {

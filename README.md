@@ -13,10 +13,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 特性
 
-<video muted width="100%" autoplay loop>
-  <source src="https://github.com/zhouyuexie/gatsby-starter-quiet/blob/master/static/download/switch-theme.mp4" type="video/mp4">
-  Sorry, your browser doesn't support embedded videos.
-</video>
+![blog screen](https://github.com/zhouyuexie/gatsby-starter-quiet/blob/master/static/download/screen.png?raw=true)
 
 - 开箱即用
 - 支持系统主题切换(详细查看[CSS3 媒体查询-Dark 模式](https://www.quietboy.net/posts/2019-05-30/CSS3%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2-Dark%E6%A8%A1%E5%BC%8F))
@@ -76,6 +73,11 @@ createPageConfig:
     _注意: 这是第二个链接 _`http://localhost:8000/___graphql`_. 这是一个可以查询你所有数据的工具,如果你需要更多关于此工具的消息,请查看官方文档[Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
     打开并编辑`src/templates/posts-list.tsx`文件. 保存后浏览器中会即时刷新.
+
+4.  **编译上传**
+
+    运行 `yarn build` 编译你的网站,所有静态内容都在`./public`文件夹中.
+    如果需要上传到自己服务器,请先编辑`./deploy.sh`文件增加你的服务器信息,再执行`yarn deploy`
 
 ## 🧐 项目里面有什么?
 
