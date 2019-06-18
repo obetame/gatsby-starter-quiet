@@ -8,6 +8,23 @@ tags: [markdown, gatsby]
 
 以下是一些使用方式,提供备用查询,详情可以查看 gastby-remark[^1].
 
+## 元数据
+
+编写的 MarkDown 必须在头部添加 yaml 格式元数据,比如这篇博客的源数据如下:
+
+```yml
+---
+layout: posts
+title: 'Gatsby的MarkDown使用示例'
+date: '2019-06-14'
+description: '花了大概一周的时间把博客从jekyll迁移到了Gatsby,在这迁移中花了挺多时间将自己博客这套UI简化成一个Gastby模板开源出来.这篇博客是关于其中MarkDown特殊使用方式,方便使用者查询使用'
+tags: [markdown, gatsby]
+---
+
+```
+
+不想发布的 MarkDown 你可以添加`draft: true`元数据.
+
 ## 脚注
 
 比如上面的 gastby-remark 旁边有一个[^1],这是一个脚注,引用到了文章最下面的一块区域,相当于注解或者引用出处,点击注脚就直达底部,点击底部返回图标可以再返回当前位置,使用方式很简单:

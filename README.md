@@ -22,6 +22,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 - SCSS 支持
 - Google 分析同级
 - MarkDown 图片懒加载
+- MarkDown 草稿支持
 - 自定义主题一键切换
 - 使用[FiraCode 英文字体](https://github.com/tonsky/FiraCode)
 - 使用 FontaweSome 图标
