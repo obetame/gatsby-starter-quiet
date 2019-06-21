@@ -21,7 +21,7 @@ module.exports = {
 		title: `Quiet - Blog`,
 		description: `愿生活不为五斗米折腰 - Web前端开发博客`,
 		author: `zhouyuexie`,
-		siteUrl: 'https://www.quietboy.net',
+		siteUrl: 'https://www.QuietBoy.net',
 	},
 	plugins: [
 		`gatsby-plugin-styled-components`,
@@ -48,7 +48,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-sitemap`,
 			options: {
-				output: `/feed.xml`,
+				output: `/site.xml`,
 				sitemapSize: 5000,
 				exclude: ['/404'],
 				query: `{
@@ -129,7 +129,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				trackingId: 'UA-114648080-1',
+				trackingId: '',
 				// Defines where to place the tracking script - `true` in the head and `false` in the body
 				head: false,
 				// Setting this parameter is optional
@@ -138,6 +138,63 @@ module.exports = {
 				respectDNT: true,
 				// Avoids sending pageview hits from custom paths
 				exclude: [],
+			},
+		},
+		{
+			resolve: `gatsby-plugin-feed`,
+			options: {
+				query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+				feeds: [
+					{
+						serialize: ({ query: { site, allMarkdownRemark } }) => {
+							const { siteUrl } = site.siteMetadata;
+							return allMarkdownRemark.edges.map(edge => {
+								const { date, layout, title } = edge.node.frontmatter;
+								const url = `${siteUrl}/${layout}/${date}/${title}`;
+
+								return Object.assign({}, edge.node.frontmatter, {
+									url,
+									guid: url,
+									custom_elements: [{ 'content:encoded': edge.node.html }],
+								});
+							});
+						},
+						query: `
+              {
+                allMarkdownRemark(
+                  filter: { frontmatter: { draft: { in: [false, null] } } }
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      html
+                      frontmatter {
+                        title
+                        layout
+                        date
+                        description
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+						output: '/feed.xml',
+						title: 'Quiet RSS Feed',
+						match: '^/posts/',
+					},
+				],
 			},
 		},
 	],
