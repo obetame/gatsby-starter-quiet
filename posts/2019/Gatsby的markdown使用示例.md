@@ -6,7 +6,7 @@ description: '花了大概一周的时间把博客从jekyll迁移到了Gatsby,�
 tags: [markdown, gatsby]
 ---
 
-以下是一些使用方式,提供备用查询,详情可以查看 gastby-remark[^1].
+以下是一些使用方式,提供备用查询,详情可以查看 gastby-remark[^1]或 gastby-starter-quiet[^8]
 
 ## 元数据
 
@@ -55,7 +55,7 @@ tags: [markdown, gatsby]
 
 下面是使用 gatsby-remark-images[^2]插件,提供渐进式的图片加载,类似于 medium[^3]中的模糊化图片加载方式(先加载占位图,稍后再加载清晰图片),缺点是只支持`png`,`jpeg`两种类型图片:
 
-```
+```md
 ![alt text](../images/about.jpg)
 ```
 
@@ -80,11 +80,23 @@ tags: [markdown, gatsby]
 
 那么你会发现渲染出来的组件内容是由一个标签`p`包裹起来的,React 在开发模式下会发出警告:`Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>`
 
-因此组件包含 div 这类块级内容的时候最好如下使用避免警告:
+目前没有更好的解决方式,因此组件包含 div 这类块级内容的时候最好如下使用以避免 React 的警告:
 
 ```html
 <div><render-image></render-image></div>
 ```
+
+**v0.2 新增了`gist`组件,接收一个 github 的 gist id**
+
+```md
+<div><gist gid="e270a836fe5b7be938a0e02a046c1228"></gist></div>
+```
+
+渲染后:
+
+<div><gist gid="e270a836fe5b7be938a0e02a046c1228"></gist></div>
+
+_你可以参考此组件来编写自己的组件,请记住还要在`renderAst.ts`文件中进行引用_
 
 ## 代码
 
@@ -265,3 +277,4 @@ digraph graphname {
 [^5]: [parse-numeric-range](https://www.npmjs.com/package/parse-numeric-range)
 [^6]: [gatsby-remark-embed-snippet](https://www.gatsbyjs.org/packages/gatsby-remark-embed-snippet/)
 [^7]: [gatsby-remark-graphviz](https://www.gatsbyjs.org/packages/gatsby-remark-graphviz/)
+[^8]: [gatsby-starter-quiet](https://github.com/zhouyuexie/gatsby-starter-quiet)

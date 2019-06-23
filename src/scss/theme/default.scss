@@ -20,6 +20,8 @@ $lightVal: (
   --md-em: $light-em,
   --md-code-highlight: $light-highlight,
   --md-table-tr-bg: $light-table-tr-bg,
+
+  --gh-bg: $light-gh-bg,
   
   --tag-bg: $light-tag-bg,
   --tag-bg-count: $light-tag-bg-count
@@ -45,6 +47,8 @@ $darkVal: (
   --md-code-highlight: $light-highlight,
   --md-table-tr-bg: $dark-table-tr-bg,
   
+  --gh-bg: $dark-gh-bg,
+
   --tag-bg: $light-tag-bg,
   --tag-bg-count: $light-tag-bg-count
 );

@@ -3,6 +3,7 @@
 @import '../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css';
 
 pre[class*="language-"] {
+  tab-size: 2;
   &.line-numbers {
     .gatsby-highlight-code-line {
       margin-right: -0;
