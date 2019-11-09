@@ -11,6 +11,13 @@ Kick off your project with this blog boilerplate. This starter ships with the ma
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
+## 更新
+
+- 支持travis集成，提供持续构建与自动部署
+
+使用方式：
+更改`generate_rsa.sh`、`.travis.yml`文件中的配置，然后手动执行`./generate_rsa.sh`可以了，已安装过的用户可以直接copy这两个文件到到自己的项目中使用。
+
 ## 特性
 
 ![blog screen](https://github.com/zhouyuexie/gatsby-starter-quiet/blob/master/static/download/screen.png?raw=true)

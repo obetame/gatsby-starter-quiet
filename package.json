@@ -1,7 +1,7 @@
 {
 	"name": "gatsby-starter-quiet",
 	"description": "开箱即用的Gastby脚手架,支持系统级主题切换、MarkDown草稿、TypeScript、自定义主题",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"author": "zhouyuexie",
 	"dependencies": {
 		"github-api": "^3.2.2",
